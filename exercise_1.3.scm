@@ -1,8 +1,8 @@
 (define (square x) (* x x))
+(define (sum-of-square x y) (+ (square x) (square y)))
 (define (sum-of-squares-of-2-larger f s t) 
-	(cond ((and (< f s) (< f t)) (+ (square s) (square t)))
-		  ((and (< s f) (< s t)) (+ (square f) (square t)))
-		  ((and (< t f) (< t s)) (+ (square f) (square s)))
+	(cond ((and (< f s) (< f t)) (sum-of-square s t))
+		  ((and (< s f) (< s t)) (sum-of-square f t))
+		  ((and (< t f) (< t s)) (sum-of-square f s))
           (else (display "there is not 2 larger numbers"))))
 (sum-of-squares-of-2-larger 1 2 3)
- 
