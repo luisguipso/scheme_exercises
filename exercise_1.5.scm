@@ -24,4 +24,4 @@ since the predicate is true  it will return 0 and (p) would never be executed.
 
 In applicative order evaluation it will try to evaluate (p) before expanding the test expression and since (p) evaluates to it self it would cause a infinite loop.
 
-A more explained response could be found in: https://sicp-solutions.net/post/sicp-solution-exercise-1-5/
+A more explained response could be found here: https://sicp-solutions.net/post/sicp-solution-exercise-1-5/
